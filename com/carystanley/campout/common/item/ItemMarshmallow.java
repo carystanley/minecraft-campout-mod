@@ -8,4 +8,9 @@ public class ItemMarshmallow extends Item {
     	super(id);
     }
 
+    @Override
+    public void registerIcons(IconRegister par1IconRegister)
+    {
+        this.itemIcon = par1IconRegister.registerIcon("campout:marshmallow");
+    }
 }

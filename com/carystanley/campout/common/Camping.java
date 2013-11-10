@@ -5,6 +5,7 @@ import com.carystanley.camping.common.item.ItemMarshmallowStick;
 import com.carystanley.camping.common.item.ItemChocolate;
 import com.carystanley.camping.common.item.ItemGrahamcracker;
 import com.carystanley.camping.common.item.ItemSleepingBag;
+import com.carystanley.camping.common.item.ItemSmore;
 import com.carystanley.camping.common.block.BlockSleepingBag;
 
 import cpw.mods.fml.common.Mod;
@@ -27,6 +28,7 @@ public class Camping {
 	public static Item chocolate = new ItemChocolate(5560, 3, 0.5f, false).setUnlocalizedName("chocolate");
 	public static Item grahamcracker = new ItemGrahamcracker(5561, 3, 0.5f, false).setUnlocalizedName("grahamcracker");
 	public static Item marshmallowStick = new ItemMarshmallow(5562).setUnlocalizedName("marshmallowstick");
+	public static Item smore = new ItemSmore(5563, 8, 0.5f, false).setUnlocalizedName("smore");
 	
 	public static Block sleepingBagBlock = new BlockSleepingBag(4000).setHardness(0.2F).setUnlocalizedName("sleepingbagblock");
 	
@@ -59,6 +61,14 @@ public class Camping {
 			'S', Item.sugar,
 			'W', Item.wheat
 		});
+
+	// Smore Recipe
+	GameRegistry.addShapelessRecipe(new ItemStack(Camping.smore, 1), new Object[] {
+		Camping.grahamcracker,
+		Camping.grahamcracker,
+		Camping.marshmallow,
+		Camping.chocolate
+	});
 
 		// Sleeping Bag Recipe
 		GameRegistry.addRecipe(new ItemStack(Camping.sleepingBagItem, 1), new Object[] {

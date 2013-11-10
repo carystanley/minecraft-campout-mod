@@ -5,7 +5,7 @@ import net.minecraft.item.ItemFood;
 
 public class ItemChocolate extends ItemFood {
     public ItemChocolate(int id, int foodAmount, float sat, boolean isWolfMeat) {
-    	super(id, foodAmount, sat, isWolfMeat);
+        super(id, foodAmount, sat, isWolfMeat);
     }
         
     @Override
@@ -13,5 +13,4 @@ public class ItemChocolate extends ItemFood {
     {
         this.itemIcon = par1IconRegister.registerIcon("campout:chocolate");
     }
-
 }
