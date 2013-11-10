@@ -10,6 +10,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
+import net.minecraft.client.renderer.texture.IconRegister;
+
 public class ItemSleepingBag extends Item {
 	public ItemSleepingBag(int id) {
 		super(id);
@@ -78,6 +80,12 @@ public class ItemSleepingBag extends Item {
                 return false;
             }
         }
+    }
+
+    @Override
+    public void registerIcons(IconRegister par1IconRegister)
+    {
+        this.itemIcon = par1IconRegister.registerIcon("campout:sleepingbag");
     }
 
 }

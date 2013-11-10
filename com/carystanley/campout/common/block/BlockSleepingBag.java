@@ -101,8 +101,8 @@ public class BlockSleepingBag extends BlockBed {
      */
     public void registerIcons(IconRegister par1IconRegister)
     {
-        this.sbagTopIcons = new Icon[] {par1IconRegister.registerIcon("campout:bed_feet_top"), par1IconRegister.registerIcon("campout:bed_head_top")};
-        this.sbagEndIcons = new Icon[] {par1IconRegister.registerIcon("campout:bed_feet_end"), par1IconRegister.registerIcon("campout:bed_head_end")};
-        this.sbagSideIcons = new Icon[] {par1IconRegister.registerIcon("campout:bed_feet_side"), par1IconRegister.registerIcon("campout:bed_head_side")};
+        this.sbagTopIcons = new Icon[] {par1IconRegister.registerIcon("campout:sleepingbag_feet_top"), par1IconRegister.registerIcon("campout:sleepingbag_head_top")};
+        this.sbagEndIcons = new Icon[] {par1IconRegister.registerIcon("campout:sleepingbag_feet_end"), par1IconRegister.registerIcon("campout:sleepingbag_head_end")};
+        this.sbagSideIcons = new Icon[] {par1IconRegister.registerIcon("campout:sleepingbag_feet_side"), par1IconRegister.registerIcon("campout:sleepingbag_head_side")};
     }
 }
