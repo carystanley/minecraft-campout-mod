@@ -31,7 +31,6 @@ public class ItemSleepingBag extends Item {
         {
             ++par5;
             BlockSleepingBag blockbed = (BlockSleepingBag)Camping.sleepingBagBlock;
-            System.out.println(blockbed.blockID);
             int i1 = MathHelper.floor_double((double)(par2EntityPlayer.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
             byte b0 = 0;
             byte b1 = 0;
