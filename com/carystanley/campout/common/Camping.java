@@ -92,6 +92,7 @@ public class Camping {
 		LanguageRegistry.addName(Camping.grahamcracker, "Grahamcracker");
 		LanguageRegistry.addName(Camping.sleepingBagItem, "Sleeping Bag");
 		LanguageRegistry.addName(Camping.sleepingBagBlock, "Sleeping Bag");
+		LanguageRegistry.addName(Camping.smore, "Smore");
 	}
 
 }
