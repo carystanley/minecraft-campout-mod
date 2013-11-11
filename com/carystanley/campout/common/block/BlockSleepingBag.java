@@ -15,6 +15,7 @@ import net.minecraft.util.Direction;
 import net.minecraft.util.Icon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraft.entity.EntityLivingBase;
 
 public class BlockSleepingBag extends BlockBed {
 
@@ -27,7 +28,6 @@ public class BlockSleepingBag extends BlockBed {
    
 	public BlockSleepingBag(int id) {
 		super(id);
-		//setLightValue(1.0f);
 		disableStats();
 	}
 	
@@ -39,8 +39,8 @@ public class BlockSleepingBag extends BlockBed {
         return isBlockHeadOfBed(par1) ? 0 : Camping.sleepingBagItem.itemID;
     }
     
-    
-    public boolean isBed(World world, int x, int y, int z, EntityLiving player)
+    @Override
+    public boolean isBed(World world, int x, int y, int z, EntityLivingBase player)
     {
         return true;
     }
